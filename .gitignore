@@ -1,0 +1,6 @@
+.agent/
+.agents/
+scratch/
+*.log
+node_modules/
+.DS_Store

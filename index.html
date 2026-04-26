@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimbi | Dise&ntilde;o Web con IA</title>
+    <meta name="description" content="Agencia de IA y Desarrollo Digital. Contenido, identidad y automatizaci&oacute;n para escalar tu marca.">
+    <link rel="canonical" href="https://wimbi.com/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon-wimbi.png">
+    <meta property="og:title" content="Wimbi | Dise&ntilde;o Web con IA">
+    <meta property="og:description" content="Contenido que detiene el scroll. Webs que cierran clientes.">
+    <meta property="og:image" content="https://wimbi.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://wimbi.com/">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=3.8">
+</head>
+
+<body>
+    <div id="particle-ocean-container" class="ocean-3d-bg"></div>
+
+    <!-- Navegaci&oacute;n -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/wimbi-logo-png.png" alt="Wimbi Logo" class="logo-img">
+                <span class="logo-text sr-only">Wimbi</span>
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="servicio-ia-content.html">Contenido IA</a></li>
+                        <li><a href="servicio-web.html">Web &amp; Apps</a></li>
+                        <li><a href="servicio-smart-automate.html">Automatizaci&oacute;n</a></li>
+                    </ul>
+                </li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="https://wa.me/584241550550" class="btn-primary" target="_blank">Empezar ahora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero centered-protagonist">
+        <div class="hero-content">
+            <p class="hero-tagline text-cyan">Agencia de IA y Desarrollo Digital</p>
+            <h1 class="hero-title-v2">
+                <div class="hero-line-mask">
+                    <span class="hero-line">Impulsa tu negocio</span>
+                </div>
+                <div class="hero-line-mask">
+                    <span class="hero-line">con <span class="text-cyan">IA</span> y <span class="text-cyan">automatizaci&oacute;n</span></span>
+                </div>
+            </h1>
+            <h2 class="hero-description">Creamos contenido, webs y sistemas inteligentes que convierten tu presencia digital en clientes reales.</h2>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn-cyan-glow btn-pixel-hover micro-cta">
+                    <span class="btn-text">Empieza Ahora</span>
+                    <div class="pixel-particles">
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                    </div>
+                </a>
+                <a href="#servicios" class="btn-secondary-white micro-cta">Ver Servicios</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </header>
+
+    <!-- SECCI&Oacute;N 2: VISIBILIDAD -->
+    <section id="visibility-block" class="section-padding scroll-reveal-section reveal">
+        <div class="animated-svg-bg">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" class="radar-svg">
+                <defs>
+                    <linearGradient id="radar-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="var(--clr-cyan)" stop-opacity="0.3" />
+                        <stop offset="100%" stop-color="var(--clr-cyan)" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+                <circle cx="400" cy="400" r="100" class="radar-circle radar-c1" />
+                <circle cx="400" cy="400" r="200" class="radar-circle radar-c2" />
+                <circle cx="400" cy="400" r="300" class="radar-circle radar-c3" />
+                <line x1="400" y1="400" x2="400" y1="100" class="radar-line" />
+                <path d="M400,400 L400,100 A300,300 0 0,1 700,400 Z" class="radar-sweep" />
+
+                <!-- Radar blips: digital visibility points -->
+                <!-- Inner ring blips (r~80-100) -->
+                <circle cx="460" cy="355" r="4" class="radar-blip blip-d1" />
+                <circle cx="345" cy="430" r="3" class="radar-blip blip-d2" />
+
+                <!-- Mid ring blips (r~150-200) -->
+                <circle cx="530" cy="300" r="5" class="radar-blip blip-d3" />
+                <circle cx="270" cy="340" r="4" class="radar-blip blip-d4" />
+                <circle cx="500" cy="530" r="3.5" class="radar-blip blip-d5" />
+                <circle cx="320" cy="560" r="4" class="radar-blip blip-d6" />
+
+                <!-- Outer ring blips (r~250-300) -->
+                <circle cx="620" cy="320" r="5" class="radar-blip blip-d7" />
+                <circle cx="180" cy="420" r="4.5" class="radar-blip blip-d8" />
+                <circle cx="450" cy="140" r="3.5" class="radar-blip blip-d9" />
+                <circle cx="560" cy="600" r="4" class="radar-blip blip-d10" />
+                <circle cx="220" cy="260" r="3" class="radar-blip blip-d11" />
+                <circle cx="350" cy="670" r="4.5" class="radar-blip blip-d12" />
+            </svg>
+        </div>
+        <div class="container text-center relative-z">
+            <h2 class="section-main-title two-line-title">
+                <span>Haz visible tu negocio</span>
+                <span>y automatiza <span class="text-cyan">lo que te frena</span></span>
+            </h2>
+            <p class="section-subtitle" style="margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Tu negocio puede tener potencial, pero si no es visible, el crecimiento se vuelve lento e inestable. La falta de automatizaci&oacute;n y una presencia digital d&eacute;bil son dos de los principales bloqueos para escalar.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCI&Oacute;N 3: SERVICIOS -->
+    <section id="servicios" class="section-padding services-showcase">
+        <div class="container overflow-visible text-center">
+            <div class="ps-header reveal" style="max-width: 800px; margin: 0 auto;">
+                <span class="pill-tag">Nuestros Servicios</span>
+                <h2 class="section-main-title two-line-title">
+                    <span>Soluciones digitales</span>
+                    <span>de <span class="text-cyan">alto impacto</span></span>
+                </h2>
+                <p class="section-subtitle">Cada proyecto es una oportunidad para crear algo extraordinario que impulse tu negocio hacia el futuro automatizando y escalando tu marca.</p>
+            </div>
+
+            <div class="elite-services-grid">
+                <!-- Servicio 1: Contenido con IA -->
+                <a href="servicio-ia-content.html" class="elite-card reveal">
+                    <div class="elite-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.29 1.29L3 12l5.8 1.9a2 2 0 0 1 1.29 1.29L12 21l1.9-5.8a2 2 0 0 1 1.29-1.29L21 12l-5.8-1.9a2 2 0 0 1-1.29-1.29L12 3Z" />
+                        </svg>
+                    </div>
+                    <h3 class="elite-title">Contenido con IA</h3>
+                    <p class="elite-desc">Creamos contenido de alto impacto. Desde foto producto hiperrealista y videos din&aacute;micos hasta avatares personalizados dise&ntilde;ados para captar la atenci&oacute;n.</p>
+                    <div class="elite-btn-more">
+                        Ver m&aacute;s
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                    <ul class="elite-includes">
+                        <li>Video-Fotos Productos</li>
+                        <li>P&oacute;ster e Infograf&iacute;as con IA</li>
+                        <li>Contenido UGC</li>
+                        <li>Dise&ntilde;o de Avatares</li>
+                    </ul>
+                </a>
+
+                <!-- Servicio 2: Desarrollo Web -->
+                <a href="servicio-web.html" class="elite-card reveal delay-1">
+                    <div class="elite-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="elite-title">Desarrollo Web</h3>
+                    <p class="elite-desc">Construimos sitios web y web apps a medida, priorizando la velocidad, el SEO y una experiencia de usuario fluida que gu&iacute;a a tus clientes hacia la conversi&oacute;n.</p>
+                    <div class="elite-btn-more">
+                        Ver m&aacute;s
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                    <ul class="elite-includes">
+                        <li>Landing Page</li>
+                        <li>One Page</li>
+                        <li>Web Corporativa</li>
+                        <li>E-Commerce</li>
+                    </ul>
+                </a>
+
+                <!-- Servicio 3: Automatizaci&oacute;n -->
+                <a href="servicio-smart-automate.html" class="elite-card reveal delay-2">
+                    <div class="elite-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="elite-title">Automatizaci&oacute;n</h3>
+                    <p class="elite-desc">Eliminamos las tareas repetitivas mediante agentes de IA, para que tus procesos operativos se ejecuten de forma aut&oacute;noma y sin errores.</p>
+                    <div class="elite-btn-more">
+                        Ver m&aacute;s
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                    <ul class="elite-includes">
+                        <li>Flujos Autom&aacute;ticos</li>
+                        <li>Agentes IA</li>
+                        <li>Integraciones API</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUI&Eacute;NES SOMOS -->
+    <section id="quienes-somos" class="section-padding reveal relative overflow-hidden">
+        <div class="about-banner-wave">
+            <div class="container relative z-10">
+                <div class="about-section text-center">
+                    <span class="section-subtitle">Menos esfuerzo. M&aacute;s resultados.</span>
+                    <h2 class="section-main-title fluid-about-title">
+                        Tu aliado t&eacute;cnico para crecer <br class="desktop-only-br"> con <span class="text-cyan">IA y automatizaci&oacute;n</span>
+                    </h2>
+                    <div class="about-main-text">
+                        <p>En WIMBI combinamos inteligencia artificial, desarrollo web y automatizaci&oacute;n para ayudarte a hacer crecer tu negocio en el entorno digital.</p>
+                        <p>Sabemos que el tiempo es limitado y que muchas empresas no cuentan con un sistema que genere resultados de forma constante. Por eso creamos soluciones que optimizan tus procesos, mejoran tu presencia digital y convierten visitas en clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE -->
+    <section id="portfolio-preview" class="section-padding portfolio-showcase-section reveal">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <span class="pill-tag">PROYECTOS REALES</span>
+                <h2 class="section-main-title">Resultados que <span class="text-cyan">hablan por s&iacute; solos</span></h2>
+                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 1.5rem auto 0;">Cada proyecto refleja nuestro compromiso con la calidad, la innovaci&oacute;n y el crecimiento de nuestros clientes.</p>
+            </div>
+
+            <div class="portfolio-preview-grid">
+                <!-- Proyecto 1: Ancesthai -->
+                <a href="portafolio.html" class="portfolio-preview-card reveal delay-1">
+                    <div class="preview-img-wrapper">
+                        <img src="assets/Ancesthai.png" alt="Ancesthai - Web Corporativa">
+                        <div class="preview-overlay">
+                            <span class="preview-badge">Web Corporativa</span>
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3>Ancesthai</h3>
+                        <p>Salud &amp; Bienestar</p>
+                    </div>
+                </a>
+
+                <!-- Proyecto 2: Rumi -->
+                <a href="portafolio.html" class="portfolio-preview-card reveal delay-2">
+                    <div class="preview-img-wrapper">
+                        <img src="assets/rumi.jpeg" alt="Rumi - Avatar IA">
+                        <div class="preview-overlay">
+                            <span class="preview-badge">Avatar IA + Contenido</span>
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3>Rumi</h3>
+                        <p>Automotriz</p>
+                    </div>
+                </a>
+
+                <!-- Proyecto 3: Luna -->
+                <a href="portafolio.html" class="portfolio-preview-card reveal delay-3">
+                    <div class="preview-img-wrapper">
+                        <img src="assets/luna farmatodo.png" alt="Luna - Avatar IA WIMBI">
+                        <div class="preview-overlay">
+                            <span class="preview-badge">Avatar IA + Contenido</span>
+                        </div>
+                    </div>
+                    <div class="preview-info">
+                        <h3>Luna</h3>
+                        <p>IA aplicada a marcas</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="portafolio.html" class="btn-cyan-glow btn-pixel-hover micro-cta" style="max-width: 280px;">
+                    <span class="btn-text">Ver portafolio</span>
+                    <div class="pixel-particles">
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                        <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCI&Oacute;N DE CONTACTO -->
+    <section id="contacto" class="final-cta-section section-padding contact-wave-bg" style="width: 100%;">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header text-center">
+                    <h2 class="contact-title two-line-title">
+                        <span>&iquest;Tu marca est&aacute; lista para</span>
+                        <span>el <span class="text-cyan">siguiente nivel?</span></span>
+                    </h2>
+                    <p class="contact-subtitle">Cu&eacute;ntanos tu proyecto y recibe una propuesta estrat&eacute;gica para escalar tu marca</p>
+                </div>
+
+                <div class="contact-form-card">
+                    <form class="wimbi-form" id="contact-form-universal">
+                        <div class="form-group">
+                            <input type="text" id="nombre_uni" name="nombre" placeholder=" " required>
+                            <label for="nombre_uni" class="form-label">Nombre o Empresa</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contacto_user_uni" name="contacto_user" placeholder=" " required>
+                            <label for="contacto_user_uni" class="form-label">N&uacute;mero de Contacto</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email_uni" name="email" placeholder=" " required>
+                            <label for="email_uni" class="form-label">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="servicio_uni" name="servicio" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="content">Contenido IA</option>
+                                <option value="web">Web &amp; WebApps</option>
+                                <option value="automate">Automatizaci&oacute;n</option>
+                                <option value="integral">Propuesta Integral</option>
+                            </select>
+                            <label for="servicio_uni" class="form-label">Tipo de Proyecto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="nota_uni" name="nota" placeholder=" " required></textarea>
+                            <label for="nota_uni" class="form-label">Cu&eacute;ntanos sobre tu negocio y qu&eacute; necesitas</label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit btn-large">
+                                <span>INICIAR PROYECTO</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/wimbi-logo-png.png" alt="Wimbi" class="footer-logo" loading="lazy">
+                    <p class="footer-tagline">Agencia de IA y Desarrollo Digital. Contenido, identidad y automatizaci&oacute;n para tu marca.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicio-ia-content.html">Contenido IA</a></li>
+                        <li><a href="servicio-web.html">Web &amp; WebApps</a></li>
+                        <li><a href="servicio-smart-automate.html">Automatizaci&oacute;n</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="tel:+584241550550" aria-label="Llamar por tel&eacute;fono">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                <span>+58 424 155 0550</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hola@wimbi.agency" aria-label="Enviar email">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="M22 7l-10 7L2 7" />
+                                </svg>
+                                <span>hola@wimbi.agency</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-title">S&iacute;guenos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/wimbi.digital/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@wimbi_labs" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .8.11V9.42a7.27 7.27 0 0 0-3.47-.84 7.36 7.36 0 0 0-7.39 7.39c0 4.08 3.31 7.4 7.39 7.4 4.08 0 7.39-3.32 7.39-7.4V10c1.28 1.14 3 1.83 4.9 1.83V8.38a4.83 4.83 0 0 1-1.44-.22z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-cta-text">&iquest;Listo para escalar tu marca? <a href="https://wa.me/584241550550" class="footer-cta-link">Hablemos &rarr;</a></p>
+                <p class="copyright">&copy; 2026 Wimbi. Dise&ntilde;ado para convertir.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/584241550550" class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <div class="luna-notif-container">
+            <div class="luna-bubble">
+                <img src="assets/luna_.png" alt="Luna IA">
+                <div class="luna-msg-tooltip">&iquest;Necesitas ayuda? Soy Luna</div>
+            </div>
+        </div>
+        <svg viewBox="0 0 448 512" width="24" height="24"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.4 27.3 106.1 27.3 122.4 0 222-99.6 222-222 0-59.3-23.2-115-65.1-157.3zM223.9 446.2c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 365.9l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 54 81.2 54 130.4 0 101.7-82.8 184.5-184.5 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.5-16.4-14.7-27.5-32.8-30.7-38.2-3.2-5.6-.4-8.6 2.5-11.3 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.5-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.6 9.2 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" /></svg>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js?v=1.3.5"></script>
+</body>
+</html>
