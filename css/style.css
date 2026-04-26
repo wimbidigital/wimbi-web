@@ -950,6 +950,12 @@ header.section-padding,
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        background: radial-gradient(circle at center, rgba(5, 11, 20, 0.2) 0%, rgba(5, 11, 20, 0.9) 100%);
+    }
+}
+
 .hero-content {
     width: 100%;
     margin: 0 auto;

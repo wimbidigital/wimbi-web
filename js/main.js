@@ -8,9 +8,9 @@ if (oceanContainer && typeof THREE !== 'undefined') {
     let mouseX = 0, mouseY = 0;
 
     const isMobile = window.innerWidth <= 768;
-    const SEPARATION = isMobile ? 45 : 35;
-    const AMOUNTX = isMobile ? 80 : 160;
-    const AMOUNTY = isMobile ? 80 : 160;
+    const SEPARATION = isMobile ? 38 : 35; // Mas denso en movil
+    const AMOUNTX = isMobile ? 85 : 160;
+    const AMOUNTY = isMobile ? 85 : 160;
     let count = 0;
 
     const windowHalfX = window.innerWidth / 2;
@@ -22,7 +22,7 @@ if (oceanContainer && typeof THREE !== 'undefined') {
         // Cámara
         camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 1, 10000);
         // Posicionamiento para mirar la "marea" desde arriba en ángulo
-        camera.position.z = isMobile ? 1500 : 1200;
+        camera.position.z = isMobile ? 1100 : 1200; // Mas cerca en movil para mas impacto
         camera.position.y = 500;
         camera.lookAt(0, 0, 0);
 
@@ -63,10 +63,10 @@ if (oceanContainer && typeof THREE !== 'undefined') {
 
         // Material estilo "Pixel" (puntos cuadrados básicos pero de alta tecnología)
         const material = new THREE.PointsMaterial({
-            size: isMobile ? 1.8 : 2.5,  // Más sutil en móvil
+            size: isMobile ? 3.0 : 2.5,  // Mas grande en movil para visibilidad
             vertexColors: true,     
             transparent: true,
-            opacity: isMobile ? 0.6 : 0.9, // Más sutil en móvil
+            opacity: isMobile ? 0.9 : 0.9, // Mas opaco en movil
             sizeAttenuation: true   
         });
 
