@@ -69,7 +69,7 @@ Text Domain: wimbi
 
     /* Spacing System */
     --space-section: clamp(2rem, 7vw, 5rem); /* Reduced from 8rem for a more cohesive flow */
-    --space-section-mobile: 2.5rem; /* Reduced from 3rem */
+    --space-section-mobile: 1.8rem; /* Reduced from 2.5rem to minimize scroll */
     --header-height: 100px;
 }
 
@@ -387,6 +387,14 @@ header.section-padding,
 }
 
 @media (max-width: 992px) {
+    .navbar {
+        padding: 0.8rem 0; /* More compact header on mobile */
+    }
+
+    .logo-img {
+        height: 38px; /* Slightly smaller logo to save vertical space */
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -1069,13 +1077,22 @@ header.section-padding,
 
 @media (max-width: 1024px) {
     .hero {
-        padding-top: 100px; /* Reduced from 120px */
-        padding-bottom: 60px; /* Reduced from 80px */
+        padding-top: 90px; /* header space + minimal margin */
+        padding-bottom: 2.5rem; /* Compact bottom space */
+    }
+
+    .hero-tagline {
+        margin-bottom: 1rem;
     }
 
     .hero-title-v2 {
         font-size: clamp(1.3rem, 6.2vw, 3rem);
+        margin-bottom: 1rem;
         /* Reducido para asegurar que quepa en dos líneas sin overflow excesivo */
+    }
+
+    .hero-description {
+        margin-bottom: 1.5rem;
     }
 }
 
